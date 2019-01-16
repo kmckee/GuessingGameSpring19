@@ -6,8 +6,17 @@ namespace GuessingGameSpring19
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            Console.WriteLine("Adios!");
+            Console.WriteLine("Please guess a number between 1 and 10.");
+            string userGuess = Console.ReadLine();
+            Console.WriteLine("You guessed: " + userGuess);
+
+            if (userGuess.Equals("7"))
+            {
+                Console.WriteLine("You win!");
+            } else
+            {
+                Console.WriteLine("You lost.");
+            }
         }
     }
 }
